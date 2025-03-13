@@ -12,7 +12,16 @@ struct ContentView: View {
         ZStack {
             Color.secondaryBlue
                 .edgesIgnoringSafeArea(.all)
-            TopSection()
+            VStack {
+                TopSection()
+//                    .padding(8)
+                HStack {
+                    Text("From")
+                        .font(.system(size: 24))
+                    
+                }.frame(width: .infinity, height: 50)
+                    .background(Color.color1)
+            }
             
                                
                                

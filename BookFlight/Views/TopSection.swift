@@ -17,19 +17,25 @@ struct TopSection: View {
                 Text("Let's book your first flight")
                     .foregroundStyle(Color("Color1"))
                     .bold()
-                    .font(.system(size: 32))
+                    .font(.system(size: 24))
+                    .padding(.trailing, 32)
                 // Notification Bell
                 ZStack {
                     Circle()
-                        .stroke(Color.white, lineWidth: 2)
-                        .frame(width:75)
+                        .stroke(Color.white, lineWidth: 1)
+                        .frame(width:65)
                     // SF Symbol goes in here
-                    
+                    Image(systemName:  "bell")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 24)
+                        .foregroundStyle(.color1)
+                        .font(.system(size: 50, weight: .light))
                 }
                 Circle()
                     .fill(Color.primaryBlue)
-                    .stroke(Color.white, lineWidth: 2)
-                    .frame(width:75)
+                    .stroke(Color.white, lineWidth: 1)
+                    .frame(width:65)
             }.padding(6)
         }
     }
