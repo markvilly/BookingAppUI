@@ -53,8 +53,17 @@ struct DestinationInputs: View {
                 
             }
             ZStack {
-                
-            }
+                Circle()
+                    .fill(Color.secondaryBlue)
+                    .frame(width:80)
+                // SF Symbol goes in here
+                Image(systemName:  "arrow.up.arrow.down")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+                    .foregroundStyle(.color1)
+                    .font(.system(size: 50, weight: .thin))
+            }.padding(.leading, 230)
         }
         }
     

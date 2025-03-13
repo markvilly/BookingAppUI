@@ -31,7 +31,7 @@ struct ReturnDate: View {
                         .foregroundStyle(Color.color1)
                         .scaledToFit()
                         .frame(width: 30)
-                        .font(.system(size: 24, weight: .light))
+                        .font(.system(size: 24, weight: .thin))
                         
                 }
                 Spacer()
