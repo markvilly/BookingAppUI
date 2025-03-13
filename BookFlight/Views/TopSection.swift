@@ -10,9 +10,7 @@ import SwiftUI
 struct TopSection: View {
     var body: some View {
         
-        ZStack {
-            Color.secondaryBlue
-                .edgesIgnoringSafeArea(.all)
+     
             VStack () {
                 // Notifications + User Acc
                 HStack{
@@ -40,31 +38,12 @@ struct TopSection: View {
                         .stroke(Color.white, lineWidth: 1)
                         .frame(width:65)
                 }.padding(6)
-               
-//              Search Inputs
-                HStack(alignment: .top) {
-                    Text("From")
-                        .font(.system(size: 20))
-                        .padding(.leading,20)
-                    VStack(alignment: .leading) {
-                        Text("CDG")
-                            .font(.largeTitle)
-                        Text("Paris, France")
-                            .foregroundStyle(Color.secondaryBlue)
-                        
-                    }.padding(.leading,60)
-                    Spacer()
-                }
-                .frame(maxWidth:.infinity, maxHeight: 100)
-                .background(Color.white)
-                .cornerRadius(32)
-                .padding(.horizontal,8)
-//                .padding()
                 
+              
             }
         }
         
-    }
+    
 }
 
 #Preview {

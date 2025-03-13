@@ -16,14 +16,11 @@ struct ContentView: View {
             VStack {
                 TopSection()
 //                    .padding(8)
+                DestinationInputs()
+                
+                
             }
-                               
-                               
-//            NavigationView {
-//                Color.secondaryBlue
-//                    .edgesIgnoringSafeArea(.all)
-//                
-//            }
+                
         }
         
     }
