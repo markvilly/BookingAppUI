@@ -33,10 +33,18 @@ struct TopSection: View {
                             .foregroundStyle(.color1)
                             .font(.system(size: 50, weight: .light))
                     }
-                    Circle()
-                        .fill(Color.primaryBlue)
-                        .stroke(Color.white, lineWidth: 1)
-                        .frame(width:65)
+                    ZStack {
+                        Circle()
+                            .fill(Color.primaryBlue)
+                            .stroke(Color.white, lineWidth: 1)
+                            .frame(width:65)
+                        Image(systemName: "person.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 24)
+                            .foregroundStyle(Color.color1)
+                            .font(.system(size: 24, weight: .light))
+                    }
                 }.padding(6)
                 
               

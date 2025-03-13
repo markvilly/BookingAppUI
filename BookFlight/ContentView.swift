@@ -15,14 +15,23 @@ struct ContentView: View {
             
             VStack {
                 TopSection()
-//                    .padding(8)
                 DestinationInputs()
+                ReturnDate()
                 
-                
+                HStack {
+                    Text("Results")
+    //                    .font(.title)
+                        .foregroundStyle(Color.color1)
+                        .bold()
+                        .font(.system(size: 20))
+                        .padding(.horizontal, 16)
+                    Spacer()
+//                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .border(Color.red)
             }
-                
         }
-        
     }
 }
 

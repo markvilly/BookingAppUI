@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DestinationInputs: View {
     var body: some View {
-        
-        
+        ZStack{
+            
             
             VStack {
                 HStack(alignment: .top) {
@@ -52,6 +52,10 @@ struct DestinationInputs: View {
                 //                .padding()
                 
             }
+            ZStack {
+                
+            }
+        }
         }
     
 }
